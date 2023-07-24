@@ -106,7 +106,6 @@ const StyledAboutContent = styled.div`
 const Intro = () => {
   return (
     <StyledIntroContainer id="about">
-      <h5>Get to know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
         <StyledAboutMe>
