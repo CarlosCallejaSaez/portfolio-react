@@ -8,6 +8,8 @@ const StyledIntroContainer = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0;
+  align-items: center; 
+  justify-content: center; 
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
@@ -19,15 +21,14 @@ const StyledIntroContainer = styled.section`
     gap: 1rem;
   }
 `;
-
 const StyledAboutMe = styled.div`
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
   display: flex;
-
-  flex-direction: row
+  justify-content: center; 
+  align-items: center; 
   transition: var(--transition);
 
   &:hover {
@@ -45,11 +46,33 @@ const StyledAboutMe = styled.div`
   }
 `;
 
+
+const StyledAboutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+
+  @media screen and (max-width: 1024px) {
+    width: 80%; 
+  }
+`;
+
+
 const StyledAboutMeImage = styled.div`
   border-radius: 2rem;
   overflow: hidden;
   transform: rotate(10deg);
-  
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 const StyledAboutCards = styled.div`
@@ -134,6 +157,7 @@ const Intro = () => {
           
         </StyledAboutMe>
         <StyledAboutContent>
+        <StyledAboutContainer>
           <StyledAboutCards>
             <StyledAboutCard>
               <StyledAboutIcon>
@@ -151,7 +175,7 @@ const Intro = () => {
             </StyledAboutCard>
           </StyledAboutCards>
           
-          
+          </StyledAboutContainer>
         </StyledAboutContent>
         
       </div>
