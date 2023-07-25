@@ -4,6 +4,7 @@ import Topbar from './components/TopBar.jsx';
 import Experience from './components/Experience.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
+import Portfolio from './components/Portfolio.jsx';
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <Topbar />
     <Intro />
     <Experience />
+    <Portfolio />
     <Contact/>
     <Footer/>
     
