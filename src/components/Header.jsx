@@ -1,7 +1,7 @@
 import React from 'react';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
-import styled from 'styled-components';
+import styled  from 'styled-components';
 
 const StyledHeader = styled.header`
   height: 100%;
@@ -30,26 +30,7 @@ const StyledCTA = styled.div`
   margin-top: 2.5rem;
 `;
 
-const StyledHeaderSocials = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  position: absolute;
-  left: 5rem;
-  bottom: 1rem;
 
-  ::after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-  }
-
-  @media screen and (max-width: 600px){
-    display: none;
-  }
-`;
 
 const StyledScrollDownLink = styled.a`
   position: absolute;
@@ -67,10 +48,11 @@ const StyledScrollDownLink = styled.a`
 const Header = () => {
   return (
     <StyledHeader id="home">
+     
       <StyledHeaderContainer className="container header__container">
-        <h5>Hello I'm</h5>
+        <h3>Hello I'm</h3>
         <h1>Carlos Calleja Sáez</h1>
-        <h5 className="text-light">Full-stack Developer</h5>
+        <h3 className="text-light">Full-stack Developer</h3>
         <StyledCTA>
           <CTA />
         </StyledCTA>
@@ -78,7 +60,9 @@ const Header = () => {
           Scroll Down
         </StyledScrollDownLink>
         <HeaderSocials />
+        
       </StyledHeaderContainer>
+      
     </StyledHeader>
   );
 };

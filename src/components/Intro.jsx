@@ -6,8 +6,8 @@ import ME from '../assets/me.png';
 
 const StyledIntroContainer = styled.section`
   display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
@@ -25,8 +25,9 @@ const StyledAboutMe = styled.div`
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
-  display: grid;
-  place-items: center;
+  display: flex;
+
+  flex-direction: row
   transition: var(--transition);
 
   &:hover {
@@ -48,6 +49,7 @@ const StyledAboutMeImage = styled.div`
   border-radius: 2rem;
   overflow: hidden;
   transform: rotate(10deg);
+  
 `;
 
 const StyledAboutCards = styled.div`
@@ -96,22 +98,40 @@ const StyledAboutContent = styled.div`
     }
 
     @media screen and (max-width: 600px) {
-      margin: 1.5rem 0;
+      margin: 0;
     }
   }
 
   
 `;
 
+const StyledH2 = styled.h2`
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins',sans-serif;
+`;
+
+
+
 const Intro = () => {
   return (
+<>
+    
     <StyledIntroContainer id="about">
-      <h2>About Me</h2>
-      <div className="container about__container">
+    <StyledH2>       </StyledH2>
+      
+      
+      <div className="container about__container" href="#contact">
+      
         <StyledAboutMe>
+       
           <StyledAboutMeImage>
             <img src={ME} alt="me" />
           </StyledAboutMeImage>
+          
         </StyledAboutMe>
         <StyledAboutContent>
           <StyledAboutCards>
@@ -130,13 +150,13 @@ const Intro = () => {
               <StyledAboutCardText>20+ Completed Projects</StyledAboutCardText>
             </StyledAboutCard>
           </StyledAboutCards>
-          <p>
-            I’ve spent the last several months in RockTheCode
-          </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          
+          
         </StyledAboutContent>
+        
       </div>
-    </StyledIntroContainer>
+      
+    </StyledIntroContainer></>
   );
 }
 
