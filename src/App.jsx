@@ -11,16 +11,16 @@ import Portfolio from './components/Portfolio.jsx';
 
 
 function App() {
-
+  
 
   return (
     <>
-      <Header />
+      <Header  />
       <Topbar />
-      <Intro />
-      <Experience />
-      <Portfolio />
-      <Contact />
+      <Intro   />
+      <Experience  />
+      <Portfolio  />
+      <Contact  />
       <Footer />
 
     </>

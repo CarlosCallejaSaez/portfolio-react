@@ -2,7 +2,9 @@ import React from 'react';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
 import styled, { keyframes } from 'styled-components';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const fadeIn = keyframes`
   from {
@@ -68,8 +70,11 @@ const StyledH1 = styled.h1`
 `;
 
 const Header = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <StyledHeader id="home">
+    <StyledHeader id="home"  data-aos="fade-left">
       <StyledHeaderContainer className="container header__container">
         <h3>Hello I'm</h3>
         <StyledH1>Carlos Calleja Sáez</StyledH1>

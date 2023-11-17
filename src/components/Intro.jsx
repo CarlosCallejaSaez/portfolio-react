@@ -5,6 +5,10 @@ import { VscFolderLibrary } from 'react-icons/vsc';
 import ME from '../assets/me.png';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const StyledIntroContainer = styled.section`
   display: grid;
@@ -164,11 +168,15 @@ const Intro = () => {
     fetchGitHubData();
   }, []);
 
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
 
   return (
     <>
 
-      <StyledIntroContainer id="about">
+      <StyledIntroContainer id="about" data-aos="fade-right">
         <StyledH2>       </StyledH2>
 
 

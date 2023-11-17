@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import projects from '../projects';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const PortfolioSection = styled.section`
  
@@ -63,8 +66,12 @@ const PortfolioItem = styled.article`
 `;
 
 const Portfolio = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <PortfolioSection id="portfolio">
+    <PortfolioSection id="portfolio" data-aos="fade-up">
       <h5>🥇 My Favourite Projects 🥇</h5>
       <h2>Portfolio</h2>
 
