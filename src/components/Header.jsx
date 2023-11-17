@@ -1,14 +1,27 @@
 import React from 'react';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
-import styled  from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const StyledHeader = styled.header`
   height: 100%;
   padding-top: 7rem;
   overflow: hidden;
+  gap: 10px;
 
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1024px) {
     padding-top: 3rem;
   }
 `;
@@ -17,8 +30,9 @@ const StyledHeaderContainer = styled.div`
   text-align: center;
   height: 100%;
   position: relative;
+  animation: ${fadeIn} 1s ease-out; /* Aplica la animación fadeIn */
 
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1024px) {
     height: auto;
   }
 `;
@@ -30,28 +44,35 @@ const StyledCTA = styled.div`
   margin-top: 2.5rem;
 `;
 
-
-
 const StyledScrollDownLink = styled.a`
   position: absolute;
   right: 5rem;
   bottom: 5rem;
   transform: rotate(90deg);
-  font-weight: 300;
-  font-size: 0.9rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-primary);
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
     display: none;
+  }
+`;
+
+const StyledH1 = styled.h1`
+  font-size: 3rem;
+  animation: ${fadeIn} 1s ease-out; 
+
+  @media screen and (max-width: 600px) {
+    font-size: 2.5rem;
   }
 `;
 
 const Header = () => {
   return (
     <StyledHeader id="home">
-     
       <StyledHeaderContainer className="container header__container">
         <h3>Hello I'm</h3>
-        <h1>Carlos Calleja Sáez</h1>
+        <StyledH1>Carlos Calleja Sáez</StyledH1>
         <h3 className="text-light">Full-stack Developer</h3>
         <StyledCTA>
           <CTA />
@@ -60,9 +81,7 @@ const Header = () => {
           Scroll Down
         </StyledScrollDownLink>
         <HeaderSocials />
-        
       </StyledHeaderContainer>
-      
     </StyledHeader>
   );
 };

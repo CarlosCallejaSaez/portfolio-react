@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { FaAward } from 'react-icons/fa';
 import { VscFolderLibrary } from 'react-icons/vsc';
 import ME from '../assets/me.png';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const StyledIntroContainer = styled.section`
   display: grid;
@@ -12,13 +14,19 @@ const StyledIntroContainer = styled.section`
   justify-content: center; 
 
   @media screen and (max-width: 1024px) {
-    grid-template-columns: 1fr;
-    gap: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  align-items: center; 
+  justify-content: center; 
   }
 
   @media screen and (max-width: 600px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    align-items: center; 
+    justify-content: center; 
   }
 `;
 const StyledAboutMe = styled.div`
@@ -55,7 +63,7 @@ const StyledAboutContainer = styled.div`
   width: 100%; 
 
   @media screen and (max-width: 1024px) {
-    width: 80%; 
+    width: 100%; 
   }
 `;
 
@@ -140,47 +148,76 @@ const StyledH2 = styled.h2`
 
 
 const Intro = () => {
+
+  const [reposCount, setReposCount] = useState(34);
+
+  useEffect(() => {
+    const fetchGitHubData = async () => {
+      try {
+        const response = await axios.get('https://api.github.com/users/CarlosCallejaSaez');
+        setReposCount(response.data.public_repos);
+      } catch (error) {
+        console.error('Error fetching GitHub data:', error);
+      }
+    };
+
+    fetchGitHubData();
+  }, []);
+
+
   return (
-<>
-    
-    <StyledIntroContainer id="about">
-    <StyledH2>       </StyledH2>
-      
-      
-      <div className="container about__container" href="#contact">
-      
-        <StyledAboutMe>
-       
-          <StyledAboutMeImage>
-            <img src={ME} alt="me" />
-          </StyledAboutMeImage>
-          
-        </StyledAboutMe>
-        <StyledAboutContent>
-        <StyledAboutContainer>
-          <StyledAboutCards>
-            <StyledAboutCard>
-              <StyledAboutIcon>
-                <FaAward />
-              </StyledAboutIcon>
-              <StyledAboutCardTitle>Experience</StyledAboutCardTitle>
-              <StyledAboutCardText>Still Learning at RockTheCode</StyledAboutCardText>
-            </StyledAboutCard>
-            <StyledAboutCard>
-              <StyledAboutIcon>
-                <VscFolderLibrary />
-              </StyledAboutIcon>
-              <StyledAboutCardTitle>Projects</StyledAboutCardTitle>
-              <StyledAboutCardText>20+ Completed Projects</StyledAboutCardText>
-            </StyledAboutCard>
-          </StyledAboutCards>
-          
-          </StyledAboutContainer>
-        </StyledAboutContent>
-        
-      </div>
-      
-    </StyledIntroContainer></>
+    <>
+
+      <StyledIntroContainer id="about">
+        <StyledH2>       </StyledH2>
+
+
+        <div className="container about__container" href="#contact">
+
+          <StyledAboutMe>
+
+            <StyledAboutMeImage>
+              <img src={ME} alt="me" />
+            </StyledAboutMeImage>
+
+          </StyledAboutMe>
+          <br />
+          <StyledAboutContent>
+            <StyledAboutContainer>
+              <StyledAboutCards>
+                <StyledAboutCard>
+                  <StyledAboutIcon>
+                    <FaAward />
+                  </StyledAboutIcon>
+                  <StyledAboutCardTitle>Experience</StyledAboutCardTitle>
+                  <StyledAboutCardText>Still Learning at RockTheCode</StyledAboutCardText>
+                </StyledAboutCard>
+
+                <StyledAboutCard>
+                  <StyledAboutIcon>
+                    <VscFolderLibrary />
+                  </StyledAboutIcon>
+                  <StyledAboutCardTitle>Projects</StyledAboutCardTitle>
+                  <StyledAboutCardText>{reposCount !== null ? (
+                    <span>
+                      ⭐<strong>{reposCount}</strong>⭐ Repositories on Github
+                    </span>
+                  ) : (
+                    'Loading...'
+                  )}</StyledAboutCardText>
+                </StyledAboutCard>
+
+
+
+
+              </StyledAboutCards>
+
+            </StyledAboutContainer>
+          </StyledAboutContent>
+
+        </div>
+
+      </StyledIntroContainer></>
   );
 }
 

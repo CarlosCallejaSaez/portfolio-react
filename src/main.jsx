@@ -7,9 +7,9 @@ import GlobalStyle from './GlobalStyle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <ThemeProvider theme={theme}>
-    <GlobalStyle /> 
-    <App />
-  </ThemeProvider>
-</React.StrictMode>,
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>,
 )

@@ -93,7 +93,7 @@ const Footer = () => {
         <li>
           <a href="#experience">Skills</a>
         </li>
-       
+
         <li>
           <a href="#contact">Contact</a>
         </li>
@@ -109,7 +109,7 @@ const Footer = () => {
         <a href="https://github.com/CarlosCallejaSaez" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
-        
+
       </StyledFooterSocials>
       <StyledFooterCopyright>
         <small> Made with 💓 in Palencia, Spain</small>

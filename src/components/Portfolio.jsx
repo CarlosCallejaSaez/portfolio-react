@@ -65,7 +65,7 @@ const PortfolioItem = styled.article`
 const Portfolio = () => {
   return (
     <PortfolioSection id="portfolio">
-      <h5>My Recent Work</h5>
+      <h5>🥇 My Favourite Projects 🥇</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">

@@ -4,7 +4,9 @@ import { MdOutlineEmail } from 'react-icons/md';
 import styled from 'styled-components';
 
 const StyledContact = styled.section`
-  /* Add any additional styles for the section here */
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 `;
 
 const StyledContactContainer = styled.div`
@@ -67,6 +69,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  justifiy-content:center
 `;
 
 const StyledInput = styled.input`
@@ -101,10 +104,10 @@ const Contact = () => {
     setMessage(true);
     emailjs
       .sendForm(
-        'service_k2qawqh',
-        'template_c6rkpn6',
+        'service_6jyo8zc',
+        'template_mkh2lvr',
         formRef.current,
-        'X7K7ebhIeOy3YwHki'
+        'CwI4vTD03nxVOkBfa'
       )
       .then(
         (result) => {
@@ -117,7 +120,7 @@ const Contact = () => {
 
     e.target.reset();
   };
-  
+
   return (
     <StyledContact id="contact">
       <h5>Get In Touch</h5>
@@ -157,7 +160,7 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-          {message && <StyledFormMessage>Thanks!! :)</StyledFormMessage>}
+          {message && <StyledFormMessage>Thanks for your time 😃</StyledFormMessage>}
         </StyledForm>
       </StyledContactContainer>
     </StyledContact>

@@ -9,19 +9,20 @@ import Portfolio from './components/Portfolio.jsx';
 
 
 
+
 function App() {
- 
+
 
   return (
     <>
-    <Header />
-    <Topbar />
-    <Intro />
-    <Experience />
-    <Portfolio />
-    <Contact/>
-    <Footer/>
-    
+      <Header />
+      <Topbar />
+      <Intro />
+      <Experience />
+      <Portfolio />
+      <Contact />
+      <Footer />
+
     </>
   )
 }

@@ -3,7 +3,7 @@ import { BsFillPatchCheckFill } from 'react-icons/bs';
 import styled from 'styled-components';
 
 const StyledExperience = styled.section`
-  /* Add any additional styles for the section here */
+
 `;
 
 const StyledExperienceContainer = styled.div`
@@ -76,7 +76,7 @@ const StyledExperienceIcon = styled(BsFillPatchCheckFill)`
 const Experience = () => {
   return (
     <StyledExperience id="experience">
-      <h5>The Skills I Have</h5>
+      <h5>  🛠 The Skills I Have 🛠 </h5>
       <h2>Skills</h2>
       <StyledExperienceContainer className="container experience__container">
         <StyledExperienceItem className="experience__frontend">
@@ -94,7 +94,15 @@ const Experience = () => {
               <StyledExperienceIcon className="experience__details-icon" />
               <h4>JavaScript</h4>
             </StyledExperienceDetails>
-            
+            <StyledExperienceDetails className="experience__details">
+              <StyledExperienceIcon className="experience__details-icon" />
+              <h4>TypeScript</h4>
+            </StyledExperienceDetails>
+            <StyledExperienceDetails className="experience__details">
+              <StyledExperienceIcon className="experience__details-icon" />
+              <h4>React</h4>
+            </StyledExperienceDetails>
+
           </StyledExperienceContent>
         </StyledExperienceItem>
         <StyledExperienceItem className="experience__backend">
@@ -112,8 +120,8 @@ const Experience = () => {
               <StyledExperienceIcon className="experience__details-icon" />
               <h4>SQL</h4>
             </StyledExperienceDetails>
-            
-            
+
+
           </StyledExperienceContent>
         </StyledExperienceItem>
       </StyledExperienceContainer>
