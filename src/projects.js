@@ -15,7 +15,7 @@ const projects = [
     img: IMG1,
     description: "My first full stack App",
     technologies: "REACT | EXPRESS | MONGODB",
-    link: "https://6555f9c091ad8b74100ff8fc--superlative-kataifi-7cbdcb.netlify.app/",
+    link: "https://655bdaf364a70733b0993f28--ubiquitous-nougat-3e161e.netlify.app/",
     github: "https://github.com/CarlosCallejaSaez/Restaurant-App-MERN",
   },
   {
