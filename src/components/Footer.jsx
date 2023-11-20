@@ -102,7 +102,7 @@ const Footer = () => {
       </StyledPermalinks>
       <StyledFooterSocials>
         <a
-          href="https://www.linkedin.com/CarlosCallejaSaez"
+          href="https://www.linkedin.com/in/carlos-calleja-saez-8177792a0/"
           target="_blank"
           rel="noreferrer"
         >
