@@ -85,6 +85,14 @@ const StyledAboutMeImage = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  @media screen and (max-width: 600px) {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 `;
 
 const StyledAboutCards = styled.div`
