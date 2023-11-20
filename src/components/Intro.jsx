@@ -115,11 +115,11 @@ const StyledAboutIcon = styled.div`
 `;
 
 const StyledAboutCardTitle = styled.h5`
-  font-size: 1rem;
+  font-size: 1.5rem;
 `;
 
 const StyledAboutCardText = styled.small`
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   color: var(--color-light);
 `;
 

@@ -76,7 +76,7 @@ const StyledExperienceIcon = styled(BsFillPatchCheckFill)`
 const Experience = () => {
   return (
     <StyledExperience id="experience">
-      <h5>  🛠 The Skills I Have 🛠 </h5>
+      <h3>  🛠 The Skills I Have 🛠 </h3>
       <h2>Skills</h2>
       <StyledExperienceContainer className="container experience__container">
         <StyledExperienceItem className="experience__frontend">

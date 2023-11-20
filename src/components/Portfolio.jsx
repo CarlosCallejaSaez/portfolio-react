@@ -72,7 +72,7 @@ const Portfolio = () => {
   }, [])
   return (
     <PortfolioSection id="portfolio" data-aos="fade-up">
-      <h5>🥇 My Favourite Projects 🥇</h5>
+      <h3>🥇 My Favourite Projects 🥇</h3>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">

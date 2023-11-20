@@ -123,11 +123,11 @@ const Contact = () => {
 
   return (
     <StyledContact id="contact">
-      <h5>Get In Touch</h5>
-      <h5>
+      <h3>Get In Touch</h3>
+      <h3>
         I will reply ASAP if a valid email is
         provided 😊
-      </h5>
+      </h3>
       <h2>Contact Me</h2>
       <StyledContactContainer className="container contact__container">
         <StyledContactOptions className="contact__options">

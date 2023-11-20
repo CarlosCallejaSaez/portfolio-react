@@ -6,10 +6,11 @@ import { FaGithub } from 'react-icons/fa';
 
 const StyledFooter = styled.footer`
   background: var(--color-primary);
-  padding: 3rem 0;
+
   text-align: center;
   font-size: 0.9rem;
   margin-top: 7rem;
+ 
 
   
   a {
@@ -20,7 +21,7 @@ const StyledFooter = styled.footer`
 const StyledFooterLogo = styled.a`
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+
   display: inline-block;
 `;
 
@@ -29,7 +30,7 @@ const StyledPermalinks = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin: 0 auto 3rem;
+  margin: 2rem;
 
   li {
     list-style: none;
@@ -50,7 +51,7 @@ const StyledFooterSocials = styled.div`
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 4rem;
+  padding: 0.5rem;
 
 
   a {
@@ -74,6 +75,7 @@ const StyledFooterSocials = styled.div`
 const StyledFooterCopyright = styled.div`
   margin-bottom: 4rem;
   color: var(--color-bg);
+  padding: 0.5rem;
 `;
 
 const Footer = () => {
