@@ -11,6 +11,7 @@ const StyledFooter = styled.footer`
   font-size: 0.9rem;
   margin-top: 7rem;
 
+  
   a {
     color: var(--color-bg);
   }
@@ -50,6 +51,7 @@ const StyledFooterSocials = styled.div`
   justify-content: center;
   gap: 1rem;
   margin-bottom: 4rem;
+
 
   a {
     background: var(--color-bg);

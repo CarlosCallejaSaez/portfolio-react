@@ -6,16 +6,17 @@ import IMG5 from "./assets/IMG5.png";
 import IMG6 from "./assets/IMG6.png";
 import IMG7 from "./assets/IMG7.jpg";
 import IMG8 from "./assets/IMG8.webp";
+import IMG9 from "./assets/IMG9.png";
 
 const projects = [
   {
     id: 1,
-    title: "Web Responsive",
+    title: "FULL STACK RESTAURANT APP",
     img: IMG1,
-    description: "My first web responsive with filter products",
-    technologies: "HTML | CSS | JS",
-    link: "https://melodic-belekoy-48a350.netlify.app/",
-    github: "https://github.com/CarlosCallejaSaez/filter-products",
+    description: "My first full stack App",
+    technologies: "REACT | EXPRESS | MONGODB",
+    link: "https://6555f9c091ad8b74100ff8fc--superlative-kataifi-7cbdcb.netlify.app/",
+    github: "https://github.com/CarlosCallejaSaez/Restaurant-App-MERN",
   },
   {
     id: 2,
@@ -81,6 +82,15 @@ const projects = [
     link: "https://github.com/CarlosCallejaSaez/api-mobile-store",
     github: "https://github.com/CarlosCallejaSaez/api-mobile-store",
   },
+  {
+    id: 9,
+    title: "Web Responsive",
+    img: IMG9,
+    description: "My first web responsive with filter products",
+    technologies: "HTML | CSS | JS",
+    link: "https://melodic-belekoy-48a350.netlify.app/",
+    github: "https://github.com/CarlosCallejaSaez/filter-products",
+  }
 ];
 
 export default projects;
