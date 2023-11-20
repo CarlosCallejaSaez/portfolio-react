@@ -90,7 +90,7 @@ const projects = [
     technologies: "HTML | CSS | JS",
     link: "https://melodic-belekoy-48a350.netlify.app/",
     github: "https://github.com/CarlosCallejaSaez/filter-products",
-  }
+  },
 ];
 
 export default projects;

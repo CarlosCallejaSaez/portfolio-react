@@ -74,7 +74,7 @@ const Header = () => {
     AOS.init();
   }, [])
   return (
-    <StyledHeader id="home"  data-aos="fade-left">
+    <StyledHeader id="home" data-aos="fade-left">
       <StyledHeaderContainer className="container header__container">
         <h3>Hello I'm</h3>
         <StyledH1>Carlos Calleja Sáez</StyledH1>

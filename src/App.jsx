@@ -23,27 +23,27 @@ function App() {
 
   return (
     <>
-    <div className="switcher-container">
-       <label className="switch">  
-        <input type="checkbox" onChange={toggleSnow} checked={showSnow} />
-        <span className="slider round"></span>
-      </label>
-      🎄🎅 Switch for Xmas Edition🎄🎅
+      <div className="switcher-container">
+        <label className="switch">
+          <input type="checkbox" onChange={toggleSnow} checked={showSnow} />
+          <span className="slider round"></span>
+        </label>
+        🎄🎅 Switch for Xmas Edition🎄🎅
       </div>
-     
 
-      <Header  />
+
+      <Header />
       <Topbar />
-      <Intro   />
-      <Experience  />
-      <Portfolio  />
-      <Contact  />
+      <Intro />
+      <Experience />
+      <Portfolio />
+      <Contact />
       <Footer />
       {showSnow && (
         <div className="snowfall-container">
           <Snowfall snowflakeCount={100} />
         </div>
-        )}
+      )}
 
     </>
   )
