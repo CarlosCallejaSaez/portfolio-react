@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaAward } from 'react-icons/fa';
 import { VscFolderLibrary } from 'react-icons/vsc';
-import ME from '../assets/me.png';
+import ME from '../assets/me.jpg';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import AOS from 'aos';
