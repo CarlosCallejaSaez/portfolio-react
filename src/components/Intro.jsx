@@ -75,7 +75,7 @@ const StyledAboutContainer = styled.div`
 const StyledAboutMeImage = styled.div`
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
+  
   display: flex;
   justify-content: center; 
   align-items: center; 
