@@ -61,7 +61,7 @@ const projects = [
     description:
       "Games Hub: tictactoe, hangman and sudoku, Auth required ( see user and pwd in Readme)",
     technologies: "REACT | HTML | CSS | JS",
-    link: "https://quiet-torrone-2a686a.netlify.app/",
+    link: "https://golden-pegasus-f22912.netlify.app",
     github: "https://github.com/CarlosCallejaSaez/games-hub",
   },
   {
