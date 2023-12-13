@@ -193,7 +193,7 @@ const Intro = () => {
           <StyledAboutMe>
 
             <StyledAboutMeImage>
-              <img src={ME} alt="me" />
+             <a href='https://carlos-calleja-terminal.netlify.app/' target="_blank" rel="noopener noreferrer"> <img src={ME} alt="me" /> </a>
             </StyledAboutMeImage>
 
           </StyledAboutMe>
