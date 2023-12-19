@@ -102,6 +102,10 @@ const Experience = () => {
               <StyledExperienceIcon className="experience__details-icon" />
               <h4>React</h4>
             </StyledExperienceDetails>
+            <StyledExperienceDetails className="experience__details">
+              <StyledExperienceIcon className="experience__details-icon" />
+              <h4>React Native</h4>
+            </StyledExperienceDetails>
 
           </StyledExperienceContent>
         </StyledExperienceItem>

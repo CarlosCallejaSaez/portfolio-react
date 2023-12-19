@@ -7,8 +7,18 @@ import IMG6 from "./assets/IMG6.png";
 import IMG7 from "./assets/IMG7.jpg";
 import IMG8 from "./assets/IMG8.webp";
 import IMG9 from "./assets/IMG9.png";
+import recetas from "./assets/recetas.webp"
 
 const projects = [
+  {
+    id: 0,
+    title: "CHRISTMAS RECIPES REACT NATIVE APP",
+    img: recetas,
+    description: "My first React Native App",
+    technologies: "REACT NATIVE",
+    link: "https://youtu.be/cYOARWoCvF8?si=SK8TVwy1B_o0LeQ8",
+    github: "https://github.com/CarlosCallejaSaez/receta-navidenas-react-native",
+  },
   {
     id: 1,
     title: "FULL STACK RESTAURANT APP",
