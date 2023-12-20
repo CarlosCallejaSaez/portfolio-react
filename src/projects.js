@@ -11,6 +11,15 @@ import recetas from "./assets/recetas.webp"
 
 const projects = [
   {
+    id: 10,
+    title: "NEWS READER REACT NATIVE APP",
+    img: recetas,
+    description: "A news reader developed with React Native for iOS, it uses the API newsapi.org",
+    technologies: "REACT NATIVE",
+    link: "https://youtu.be/zbGgQKhoMa8?si=guhLQ9Jsuk3Kth-1",
+    github: "https://github.com/CarlosCallejaSaez/news-reader-react-native",
+  },
+  {
     id: 0,
     title: "CHRISTMAS RECIPES REACT NATIVE APP",
     img: recetas,
