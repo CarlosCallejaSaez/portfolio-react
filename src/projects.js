@@ -8,12 +8,13 @@ import IMG7 from "./assets/IMG7.jpg";
 import IMG8 from "./assets/IMG8.webp";
 import IMG9 from "./assets/IMG9.png";
 import recetas from "./assets/recetas.webp"
+import news from "./assets/news.png"
 
 const projects = [
   {
     id: 10,
     title: "NEWS READER REACT NATIVE APP",
-    img: recetas,
+    img: news,
     description: "A news reader developed with React Native for iOS, it uses the API newsapi.org",
     technologies: "REACT NATIVE",
     link: "https://youtu.be/zbGgQKhoMa8?si=guhLQ9Jsuk3Kth-1",
