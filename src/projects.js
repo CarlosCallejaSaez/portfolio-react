@@ -9,8 +9,18 @@ import IMG8 from "./assets/IMG8.webp";
 import IMG9 from "./assets/IMG9.png";
 import recetas from "./assets/recetas.webp"
 import news from "./assets/news.png"
+import threewise from "./assets/threewise.jpg"
 
 const projects = [
+  {
+    id: 11,
+    title: "CARTA REYES MAGOS APP",
+    img: threewise,
+    description: "This app allows children to send their letters to the Three Wise Men",
+    technologies: "REACT | HTML2PDF ",
+    link: "https://carta-3reyes-magos.netlify.app/",
+    github: "https://github.com/CarlosCallejaSaez/carta-reyes-magos-react",
+  },
   {
     id: 10,
     title: "NEWS READER REACT NATIVE APP",
