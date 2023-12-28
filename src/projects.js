@@ -10,8 +10,19 @@ import IMG9 from "./assets/IMG9.png";
 import recetas from "./assets/recetas.webp"
 import news from "./assets/news.png"
 import threewise from "./assets/threewise.jpg"
+import cinema from "./assets/cinema.jpg"
+
 
 const projects = [
+  {
+    id: 12,
+    title: "MOVIE TRACKER NEXTJS",
+    img: cinema,
+    description: "This app keep track of the movies you have watched and assign ratings.",
+    technologies: "REACT | NEXTJS | OMDB API ",
+    link: "https://effulgent-lebkuchen-069118.netlify.app/",
+    github: "https://github.com/CarlosCallejaSaez/movie-tracker-nextjs",
+  },
   {
     id: 11,
     title: "CARTA REYES MAGOS APP",
