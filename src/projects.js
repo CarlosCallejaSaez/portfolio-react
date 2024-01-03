@@ -11,9 +11,38 @@ import recetas from "./assets/recetas.webp"
 import news from "./assets/news.png"
 import threewise from "./assets/threewise.jpg"
 import cinema from "./assets/cinema.jpg"
-
+import robot from "./assets/robot.png"
+import todo from "./assets/todolist.jpg"
+import pinterest from "./assets/pinterest.jpg"
 
 const projects = [
+  {
+    id: 14,
+    title: "DALLE APP",
+    img: robot,
+    description: "This app allows you to generate images based on prompts using the Hugging Face DALL-E model",
+    technologies: "REACT | AI |",
+    link: "https://dainty-quokka-af20b9.netlify.app/",
+    github: "https://github.com/CarlosCallejaSaez/dall-e",
+  },
+  {
+    id: 13,
+    title: "TO DO APP",
+    img: todo,
+    description: "The ToDo App is a full stack app, a simple task management",
+    technologies: "REACT | FAST API PYTHON |",
+    link: "https://astounding-swan-db9bca.netlify.app/",
+    github: "https://github.com/CarlosCallejaSaez/todo-frontend",
+  },
+  {
+    id: 13,
+    title: "PINTEREST CLONE",
+    img: pinterest,
+    description: "Pinterest Clone with Unsplash API",
+    technologies: "REACT | UNSPLASH API  |",
+    link: "https://fantastic-cascaron-37c0f6.netlify.app/",
+    github: "https://github.com/CarlosCallejaSaez/pinterest-clone-UNSPLASH",
+  },
   {
     id: 12,
     title: "MOVIE TRACKER NEXTJS",
@@ -127,10 +156,10 @@ const projects = [
     id: 9,
     title: "Web Responsive",
     img: IMG9,
-    description: "My first web responsive with filter products",
+    description: "Web responsive with filter products",
     technologies: "HTML | CSS | JS",
-    link: "https://melodic-belekoy-48a350.netlify.app/",
-    github: "https://github.com/CarlosCallejaSaez/filter-products",
+    link: "https://eloquent-horse-9b3153.netlify.app/",
+    github: "https://github.com/CarlosCallejaSaez/practica-7-sneakers-shop",
   },
 ];
 
