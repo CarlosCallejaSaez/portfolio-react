@@ -30,7 +30,7 @@ const projects = [
     title: "TO DO APP",
     img: todo,
     description: "The ToDo App is a full stack app, a simple task management",
-    technologies: "REACT | FAST API PYTHON |",
+    technologies: "REACT | FAST API PYTHON |AUTH 0 | TAILWIND",
     link: "https://astounding-swan-db9bca.netlify.app/",
     github: "https://github.com/CarlosCallejaSaez/todo-frontend",
   },
