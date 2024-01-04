@@ -90,12 +90,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Dev Portfolio",
+    title: "Mock Dev Portfolio",
     img: IMG2,
-    description: "My first portfolio with JavaScript",
+    description: "Mock Portfolio ",
     technologies: "HTML | CSS | JS",
-    link: "https://teal-unicorn-b7fd48.netlify.app/",
-    github: "https://github.com/CarlosCallejaSaez/portfolio",
+    link: "https://steady-scone-61333d.netlify.app/",
+    github: "https://github.com/CarlosCallejaSaez/practica-portfolio-vite",
   },
   {
     id: 3,
